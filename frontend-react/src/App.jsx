@@ -128,15 +128,6 @@ function App() {
       <h1>CRUD de productos - React</h1>
 
       <section className="tarjeta">
-        <h2>Credenciales</h2>
-        <label>Usuario</label>
-        <input value={usuario} onChange={e => setUsuario(e.target.value)} />
-
-        <label>Contrasena</label>
-        <input type="password" value={clave} onChange={e => setClave(e.target.value)} />
-      </section>
-
-      <section className="tarjeta">
         <h2>{editando ? 'Editar producto' : 'Registrar producto'}</h2>
 
         <form onSubmit={guardar}>

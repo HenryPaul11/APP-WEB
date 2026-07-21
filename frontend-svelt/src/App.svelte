@@ -105,14 +105,6 @@
   <h1>CRUD de productos - Svelte</h1>
 
   <section class="tarjeta">
-    <h2>Credenciales</h2>
-    <label>Usuario</label>
-    <input bind:value={usuario} />
-    <label>Contrasena</label>
-    <input type="password" bind:value={clave} />
-  </section>
-
-  <section class="tarjeta">
     <h2>{editando ? 'Editar producto' : 'Registrar producto'}</h2>
     <form on:submit|preventDefault={guardar}>
       <label>Nombre</label>
